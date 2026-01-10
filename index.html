@@ -24,7 +24,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md. Ekbal - Profile</title>
+    <title>Mohammad Ekbal - Profile</title>
     <style>
         body { font-family: 'Arial', sans-serif; text-align: center; background-color: #f4f4f4; padding: 20px; }
         .profile-card { background: white; padding: 30px; border-radius: 15px; display: inline-block; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); max-width: 350px; width: 100%; }
@@ -38,22 +38,142 @@
 </head>
 <body>
 
-    <div class="profile-card">
-        <img src="image.jpg" alt="Md. Ekbal" width="150" height="150">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekbal Designs - Official</title>
+    <style>
+        /* Basic Setup */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background: #0f172a; /* Deep dark professional background */
+            color: #ffffff;
+            line-height: 1.6;
+        }
 
-        <h1>Md. Ekbal</h1>
-        
-        <div class="info">
-            <p><strong>🏠 Gram:</strong> Noimpur</p>
-            <p><strong>📮 Post:</strong> Lungla</p>
-            <p><strong>📍 Zila:</strong> Moulvibazar, Kulaura, Sylhet</p>
-            <p><strong>📧 Email 1:</strong> <a class="email" href="mailto:ekbalalhasan1@gmail.com">ekbalalhasan1@gmail.com</a></p>
-            <p><strong>📧 Email 2:</strong> <a class="email" href="mailto:mdekbal01751@gmail.com">mdekbal01751@gmail.com</a></p>
-            <p><strong>📞 Phone:</strong> +8801751821868</p>
+        /* Header / Brand Section */
+        header {
+            padding: 40px 20px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            margin-bottom: 40px;
+        }
+        .brand-name {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #fbbf24; /* Golden Color */
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Profile Section */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .profile-card {
+            background: #1e293b;
+            padding: 40px;
+            border-radius: 30px;
+            text-align: center;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 6px solid #fbbf24;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        h2 { font-size: 2rem; margin-bottom: 10px; color: #f8fafc; }
+
+        /* Information List */
+        .info-list {
+            text-align: left;
+            margin: 30px 0;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .info-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+        }
+        .info-item:last-child { border: none; }
+        .icon { font-size: 1.2rem; margin-right: 15px; width: 30px; }
+        .label { font-weight: 600; color: #94a3b8; width: 100px; }
+        .value { color: #e2e8f0; flex: 1; }
+
+        /* Contact Buttons */
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+            transition: transform 0.2s;
+        }
+        .btn:active { transform: scale(0.98); }
+        .whatsapp-btn { background: #22c55e; color: #fff; }
+        .email-btn { background: #3b82f6; color: #fff; }
+
+        footer { text-align: center; padding: 40px; color: #64748b; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand-name">Ekbal Designs</div>
+    </header>
+
+    <div class="container">
+        <div class="profile-card">
+            <img src="image.jpg" alt="Md. Ekbal" class="profile-img">
+
+            <h2>Md. Ekbal</h2>
+
+            <div class="info-list">
+                <div class="info-item">
+                    <span class="icon">🏠</span>
+                    <span class="label">Gram:</span>
+                    <span class="value">Noimpur</span>
+                </div>
+                <div class="info-item">
+                    <span class="icon">📮</span>
+                    <span class="label">Post:</span>
+                    <span class="value">Lungla</span>
+                </div>
+                <div class="info-item">
+                    <span class="icon">📍</span>
+                    <span class="label">Zila:</span>
+                    <span class="value">Moulvibazar, Kulaura, Sylhet</span>
+                </div>
+                <div class="info-item">
+                    <span class="icon">📧</span>
+                    <span class="label">Email:</span>
+                    <span class="value">ekbalalhasan1@gmail.com</span>
+                </div>
+            </div>
+
+            <a href="https://wa.me/8801751821868" class="btn whatsapp-btn">WhatsApp-e Nok Korun</a>
+            <a href="mailto:mdekbal01751@gmail.com" class="btn email-btn">Email Pathan</a>
         </div>
-
-        <a href="https://wa.me/8801751821868" class="btn">WhatsApp-e Message korun</a>
     </div>
+
+    <footer>
+        &copy; 2026 Ekbal Designs. All rights reserved.
+    </footer>
 
 </body>
 </html>
