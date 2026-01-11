@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ekbal Designs | Luxury Design Assets & Portfolio</title>
+    <title>Ekbal Designs | Premium PSD, Logo & UI/UX Resources</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
     <style>
-         {
-            --dark-bg: #0a0a0a;
-            --dark-card: #121212;
-            --dark-border: #252525;
-            --gold-primary: #D4AF37;
-            --gold-secondary: #F4E8C1;
-            --blue-accent: #2A9DF4;
-            --text-light: #F5F5F5;
-            --text-gray: #AAAAAA;
-            --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        :root {
+            --primary: #6C63FF;
+            --secondary: #FF6584;
+            --dark: #1A1A2E;
+            --dark-light: #16213E;
+            --light: #F5F5F5;
+            --gray: #8A8A9E;
+            --success: #4CAF50;
+            --warning: #FF9800;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             --transition: all 0.3s ease;
         }
 
@@ -27,16 +27,10 @@
         }
 
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--dark-bg);
-            color: var(--text-light);
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
             line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        h1, h2, h3, h4 {
-            font-family: 'Playfair Display', serif;
-            font-weight: 700;
         }
 
         .container {
@@ -46,154 +40,144 @@
             padding: 0 20px;
         }
 
-        section {
-            padding: 100px 0;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 60px;
-            position: relative;
-        }
-
-        .section-title h2 {
-            font-size: 2.8rem;
-            display: inline-block;
-            position: relative;
-            margin-bottom: 15px;
-        }
-
-        .section-title h2:after {
-            content: '';
-            position: absolute;
-            width: 60px;
-            height: 3px;
-            background: linear-gradient(to right, var(--gold-primary), var(--blue-accent));
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .section-title p {
-            color: var(--text-gray);
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .gold-text {
-            color: var(--gold-primary);
-        }
-
-        .blue-text {
-            color: var(--blue-accent);
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 14px 32px;
-            border-radius: 4px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-size: 0.9rem;
-            transition: var(--transition);
-            cursor: pointer;
-            border: none;
-        }
-
-        .btn-primary {
-            background-color: var(--gold-primary);
-            color: var(--dark-bg);
-        }
-
-        .btn-primary:hover {
-            background-color: var(--gold-secondary);
-            transform: translateY(-3px);
+        /* Header & Navigation - Shober Upore */
+        .main-header {
+            background-color: white;
             box-shadow: var(--shadow);
-        }
-
-        .btn-secondary {
-            background-color: transparent;
-            color: var(--gold-primary);
-            border: 1px solid var(--gold-primary);
-        }
-
-        .btn-secondary:hover {
-            background-color: rgba(212, 175, 55, 0.1);
-            transform: translateY(-3px);
-        }
-
-        /* Header & Navigation */
-        header {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             z-index: 1000;
-            padding: 20px 0;
-            background-color: rgba(10, 10, 10, 0.95);
-            backdrop-filter: blur(10px);
-            transition: var(--transition);
         }
 
-        header.scrolled {
-            padding: 15px 0;
-            box-shadow: var(--shadow);
+        .header-top {
+            background-color: var(--dark);
+            color: white;
+            padding: 8px 0;
+            font-size: 0.9rem;
         }
 
-        .navbar {
+        .header-top .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+
+        .contact-info a:hover {
+            color: var(--primary);
+        }
+
+        .login-btn {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .login-btn:hover {
+            background-color: #5a52e0;
+        }
+
+        .header-main {
+            padding: 15px 0;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
         .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            font-weight: 800;
-            color: var(--text-light);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--dark);
             text-decoration: none;
         }
 
         .logo span {
-            color: var(--gold-primary);
+            color: var(--primary);
         }
 
-        .nav-links {
+        .search-bar {
+            flex: 1;
+            max-width: 500px;
+            margin: 0 30px;
+            position: relative;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 12px 20px 12px 45px;
+            border: 2px solid #e0e0e0;
+            border-radius: 50px;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .search-bar input:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .search-bar i {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--gray);
+        }
+
+        .nav-categories {
             display: flex;
-            list-style: none;
+            gap: 25px;
         }
 
-        .nav-links li {
-            margin-left: 40px;
-        }
-
-        .nav-links a {
-            color: var(--text-light);
+        .nav-categories a {
+            color: var(--dark);
             text-decoration: none;
             font-weight: 500;
-            font-size: 0.95rem;
             transition: var(--transition);
             position: relative;
         }
 
-        .nav-links a:hover {
-            color: var(--gold-primary);
+        .nav-categories a:hover {
+            color: var(--primary);
         }
 
-        .nav-links a:after {
+        .nav-categories a:after {
             content: '';
             position: absolute;
             width: 0;
-            height: 2px;
-            background: var(--gold-primary);
+            height: 3px;
+            background-color: var(--primary);
             left: 0;
             bottom: -5px;
             transition: var(--transition);
         }
 
-        .nav-links a:hover:after {
+        .nav-categories a:hover:after {
             width: 100%;
         }
 
@@ -203,448 +187,394 @@
             cursor: pointer;
         }
 
-        /* Hero Section */
+        /* Hero Section - Profile Branding */
         .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            position: relative;
-            padding-top: 100px;
-            overflow: hidden;
+            padding: 180px 0 100px;
+            background: linear-gradient(135deg, #6C63FF 0%, #1A1A2E 100%);
+            color: white;
+            margin-top: 90px;
         }
 
-        .hero-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.95)), url('https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
-            z-index: -1;
-        }
-
-        .hero-content {
+        .hero-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 60px;
             align-items: center;
-        }
-
-        .hero-text h1 {
-            font-size: 3.5rem;
-            line-height: 1.2;
-            margin-bottom: 20px;
-        }
-
-        .hero-text h1 span {
-            display: block;
-        }
-
-        .hero-text p {
-            font-size: 1.2rem;
-            color: var(--text-gray);
-            margin-bottom: 40px;
-            max-width: 500px;
-        }
-
-        .hero-btns {
-            display: flex;
-            gap: 20px;
         }
 
         .hero-image {
             position: relative;
         }
 
-        .hero-image img {
+        .profile-img {
             width: 100%;
-            border-radius: 10px;
+            border-radius: 20px;
             box-shadow: var(--shadow);
+            border: 5px solid rgba(255, 255, 255, 0.1);
         }
 
-        .feature-badge {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background-color: var(--gold-primary);
-            color: var(--dark-bg);
-            padding: 8px 16px;
-            border-radius: 4px;
-            font-weight: 700;
-            font-size: 0.8rem;
-            letter-spacing: 1px;
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            line-height: 1.2;
         }
 
-        /* Digital Library */
-        .library-controls {
-            display: flex;
-            justify-content: space-between;
+        .hero-content h2 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin-bottom: 25px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            margin-bottom: 35px;
+            opacity: 0.9;
+        }
+
+        .whatsapp-btn {
+            display: inline-flex;
             align-items: center;
-            margin-bottom: 40px;
-            flex-wrap: wrap;
-            gap: 20px;
+            gap: 12px;
+            background-color: #25D366;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
         }
 
-        .search-box {
-            position: relative;
-            flex: 1;
-            max-width: 400px;
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
         }
 
-        .search-box input {
-            width: 100%;
-            padding: 15px 20px 15px 50px;
-            background-color: var(--dark-card);
-            border: 1px solid var(--dark-border);
-            border-radius: 4px;
-            color: var(--text-light);
-            font-size: 1rem;
+        /* Design Showcase - Grid Layout */
+        .showcase {
+            padding: 100px 0;
+            background-color: white;
         }
 
-        .search-box i {
-            position: absolute;
-            left: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: var(--text-gray);
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
         }
 
-        .filter-tags {
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .filter-controls {
             display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
         }
 
-        .filter-tag {
-            padding: 10px 20px;
-            background-color: var(--dark-card);
-            border: 1px solid var(--dark-border);
-            border-radius: 30px;
-            font-size: 0.9rem;
+        .filter-btn {
+            padding: 10px 25px;
+            border: 2px solid #e0e0e0;
+            background-color: white;
+            border-radius: 50px;
             cursor: pointer;
+            font-weight: 500;
             transition: var(--transition);
         }
 
-        .filter-tag:hover, .filter-tag.active {
-            background-color: var(--gold-primary);
-            color: var(--dark-bg);
-            border-color: var(--gold-primary);
+        .filter-btn.active, .filter-btn:hover {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
         }
 
-        .products-grid {
+        .designs-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 30px;
         }
 
-        .product-card {
-            background-color: var(--dark-card);
-            border-radius: 10px;
+        .design-card {
+            background-color: white;
+            border-radius: 15px;
             overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             transition: var(--transition);
-            border: 1px solid var(--dark-border);
+            position: relative;
         }
 
-        .product-card:hover {
+        .design-card:hover {
             transform: translateY(-10px);
             box-shadow: var(--shadow);
-            border-color: var(--gold-primary);
         }
 
-        .product-image {
+        .design-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 5px 15px;
+            border-radius: 50px;
+            color: white;
+            font-weight: 600;
+            font-size: 0.8rem;
+            z-index: 2;
+        }
+
+        .premium-badge {
+            background-color: var(--primary);
+        }
+
+        .free-badge {
+            background-color: var(--success);
+        }
+
+        .design-thumbnail {
             height: 220px;
             overflow: hidden;
         }
 
-        .product-image img {
+        .design-thumbnail img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: var(--transition);
         }
 
-        .product-card:hover .product-image img {
+        .design-card:hover .design-thumbnail img {
             transform: scale(1.05);
         }
 
-        .product-info {
-            padding: 25px;
+        .design-info {
+            padding: 20px;
         }
 
-        .product-category {
-            display: inline-block;
-            color: var(--blue-accent);
-            font-size: 0.8rem;
-            font-weight: 600;
-            letter-spacing: 1px;
+        .design-title {
+            font-size: 1.2rem;
             margin-bottom: 10px;
+            color: var(--dark);
         }
 
-        .product-title {
-            font-size: 1.3rem;
+        .design-category {
+            color: var(--primary);
+            font-size: 0.9rem;
+            font-weight: 500;
             margin-bottom: 15px;
-            min-height: 60px;
+            display: block;
         }
 
-        .product-footer {
+        .design-actions {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-top: 15px;
+            opacity: 0;
+            transition: var(--transition);
         }
 
-        .product-price {
-            font-size: 1.2rem;
-            font-weight: 700;
+        .design-card:hover .design-actions {
+            opacity: 1;
         }
 
-        .free-badge {
-            background-color: var(--blue-accent);
+        .action-btn {
+            padding: 8px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .view-btn {
+            background-color: #f0f0f0;
+            color: var(--dark);
+        }
+
+        .view-btn:hover {
+            background-color: var(--primary);
             color: white;
-            padding: 5px 12px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            font-weight: 600;
-        }
-
-        .premium-badge {
-            background-color: var(--gold-primary);
-            color: var(--dark-bg);
-            padding: 5px 12px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            font-weight: 600;
         }
 
         .download-btn {
-            background-color: transparent;
-            color: var(--gold-primary);
-            border: 1px solid var(--gold-primary);
-            padding: 10px 20px;
-            border-radius: 4px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: var(--transition);
+            background-color: var(--dark);
+            color: white;
         }
 
         .download-btn:hover {
-            background-color: rgba(212, 175, 55, 0.1);
+            background-color: var(--primary);
         }
 
-        /* Testimonials */
-        .testimonials {
-            background-color: var(--dark-card);
-        }
-
-        .testimonial-slider {
-            max-width: 900px;
-            margin: 0 auto;
-            position: relative;
-        }
-
-        .testimonial-item {
-            background-color: var(--dark-bg);
-            border-radius: 10px;
-            padding: 40px;
-            text-align: center;
-            border: 1px solid var(--dark-border);
-        }
-
-        .client-photo {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin: 0 auto 20px;
-            border: 3px solid var(--gold-primary);
-        }
-
-        .client-photo img {
+        /* PSD Detail & Download Page */
+        .psd-detail-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 2000;
+            overflow-y: auto;
+            padding: 40px 20px;
         }
 
-        .testimonial-text {
-            font-size: 1.1rem;
-            font-style: italic;
-            margin-bottom: 20px;
-            color: var(--text-gray);
+        .modal-content {
+            background-color: white;
+            max-width: 1000px;
+            margin: 0 auto;
+            border-radius: 20px;
+            overflow: hidden;
+            animation: modalFadeIn 0.3s ease;
         }
 
-        .client-name {
-            font-weight: 600;
-            font-size: 1.1rem;
-            margin-bottom: 5px;
+        @keyframes modalFadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
-        .client-role {
-            color: var(--gold-primary);
-            font-size: 0.9rem;
-        }
-
-        .slider-controls {
+        .modal-header {
             display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 40px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            border-bottom: 1px solid #eee;
         }
 
-        .slider-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background-color: var(--dark-border);
+        .modal-title {
+            font-size: 1.8rem;
+            color: var(--dark);
+        }
+
+        .close-modal {
+            font-size: 2rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--gray);
+            transition: var(--transition);
+        }
+
+        .close-modal:hover {
+            color: var(--dark);
+        }
+
+        .modal-body {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        .preview-area {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .preview-area img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .file-info {
+            background-color: #f9f9f9;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .file-info h3 {
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+
+        .info-item {
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed #ddd;
+            padding-bottom: 10px;
+        }
+
+        .info-label {
+            font-weight: 500;
+            color: var(--dark);
+        }
+
+        .info-value {
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        .download-section {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .psd-download-btn {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
             cursor: pointer;
             transition: var(--transition);
-        }
-
-        .slider-dot.active {
-            background-color: var(--gold-primary);
-        }
-
-        /* Contact Section */
-        .contact-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: start;
-        }
-
-        .contact-info h3 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-        }
-
-        .contact-info p {
-            color: var(--text-gray);
-            margin-bottom: 40px;
-        }
-
-        .contact-details {
-            margin-bottom: 40px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 25px;
-        }
-
-        .contact-item i {
-            width: 50px;
-            height: 50px;
-            background-color: var(--dark-card);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 20px;
-            font-size: 1.2rem;
-            color: var(--gold-primary);
-        }
-
-        .social-links {
-            display: flex;
-            gap: 20px;
-        }
-
-        .social-link {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: var(--dark-card);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-light);
-            font-size: 1.2rem;
-            transition: var(--transition);
-            text-decoration: none;
-        }
-
-        .social-link:hover {
-            background-color: var(--gold-primary);
-            color: var(--dark-bg);
-            transform: translateY(-5px);
-        }
-
-        .contact-form input,
-        .contact-form textarea,
-        .contact-form select {
             width: 100%;
-            padding: 15px;
-            margin-bottom: 20px;
-            background-color: var(--dark-card);
-            border: 1px solid var(--dark-border);
-            border-radius: 4px;
-            color: var(--text-light);
-            font-family: 'Inter', sans-serif;
-            font-size: 1rem;
+            margin-bottom: 15px;
         }
 
-        .contact-form select {
-            appearance: none;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23D4AF37' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
-            background-repeat: no-repeat;
-            background-position: right 15px center;
-            background-size: 16px;
+        .psd-download-btn:hover {
+            background-color: #5a52e0;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(108, 99, 255, 0.3);
         }
 
-        .contact-form textarea {
-            min-height: 150px;
-            resize: vertical;
+        .login-required {
+            color: var(--secondary);
+            font-size: 0.9rem;
         }
 
         /* Footer */
         footer {
-            background-color: var(--dark-card);
-            padding: 60px 0 30px;
-            border-top: 1px solid var(--dark-border);
+            background-color: var(--dark);
+            color: white;
+            padding: 70px 0 30px;
         }
 
         .footer-content {
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
-            gap: 60px;
-            margin-bottom: 40px;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 50px;
         }
 
-        .footer-logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            font-weight: 800;
-            color: var(--text-light);
+        .footer-about h3 {
+            font-size: 1.8rem;
             margin-bottom: 20px;
-            display: inline-block;
-            text-decoration: none;
-        }
-
-        .footer-logo span {
-            color: var(--gold-primary);
+            color: white;
         }
 
         .footer-about p {
-            color: var(--text-gray);
-            margin-bottom: 30px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 25px;
         }
 
-        .footer-links h4,
-        .footer-newsletter h4 {
+        .footer-links h4 {
             font-size: 1.2rem;
             margin-bottom: 25px;
-            position: relative;
-            padding-bottom: 10px;
-        }
-
-        .footer-links h4:after,
-        .footer-newsletter h4:after {
-            content: '';
-            position: absolute;
-            width: 40px;
-            height: 2px;
-            background-color: var(--gold-primary);
-            bottom: 0;
-            left: 0;
+            color: white;
         }
 
         .footer-links ul {
@@ -652,71 +582,47 @@
         }
 
         .footer-links li {
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
 
         .footer-links a {
-            color: var(--text-gray);
+            color: rgba(255, 255, 255, 0.7);
             text-decoration: none;
             transition: var(--transition);
         }
 
         .footer-links a:hover {
-            color: var(--gold-primary);
+            color: var(--primary);
             padding-left: 5px;
-        }
-
-        .newsletter-form {
-            display: flex;
-            margin-top: 20px;
-        }
-
-        .newsletter-form input {
-            flex: 1;
-            padding: 15px;
-            background-color: var(--dark-bg);
-            border: 1px solid var(--dark-border);
-            border-radius: 4px 0 0 4px;
-            color: var(--text-light);
-        }
-
-        .newsletter-form button {
-            background-color: var(--gold-primary);
-            color: var(--dark-bg);
-            border: none;
-            padding: 0 20px;
-            border-radius: 0 4px 4px 0;
-            cursor: pointer;
-            font-weight: 600;
-            transition: var(--transition);
-        }
-
-        .newsletter-form button:hover {
-            background-color: var(--gold-secondary);
         }
 
         .copyright {
             text-align: center;
             padding-top: 30px;
-            border-top: 1px solid var(--dark-border);
-            color: var(--text-gray);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
             font-size: 0.9rem;
         }
 
         /* Responsive Design */
+        @media (max-width: 1100px) {
+            .hero-content h1 {
+                font-size: 2.8rem;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
         @media (max-width: 992px) {
-            .hero-content {
+            .hero-container {
                 grid-template-columns: 1fr;
                 text-align: center;
             }
             
-            .contact-container {
+            .modal-body {
                 grid-template-columns: 1fr;
-            }
-            
-            .footer-content {
-                grid-template-columns: 1fr;
-                gap: 40px;
             }
         }
 
@@ -725,71 +631,59 @@
                 display: block;
             }
             
-            .nav-links {
+            .nav-categories {
                 position: fixed;
-                top: 80px;
+                top: 120px;
                 left: 0;
                 width: 100%;
-                background-color: var(--dark-bg);
+                background-color: white;
                 flex-direction: column;
                 align-items: center;
                 padding: 20px 0;
+                box-shadow: var(--shadow);
                 transform: translateY(-100%);
                 opacity: 0;
                 visibility: hidden;
                 transition: var(--transition);
-                box-shadow: var(--shadow);
                 z-index: 999;
             }
             
-            .nav-links.active {
+            .nav-categories.active {
                 transform: translateY(0);
                 opacity: 1;
                 visibility: visible;
             }
             
-            .nav-links li {
-                margin: 15px 0;
+            .search-bar {
+                display: none;
             }
             
-            .hero-text h1 {
-                font-size: 2.8rem;
+            .hero-content h1 {
+                font-size: 2.3rem;
             }
             
-            .section-title h2 {
-                font-size: 2.2rem;
-            }
-            
-            .library-controls {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            
-            .search-box {
-                max-width: 100%;
+            .designs-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             }
         }
 
         @media (max-width: 576px) {
-            section {
-                padding: 70px 0;
+            .hero {
+                padding: 150px 0 80px;
+                margin-top: 120px;
             }
             
-            .hero-text h1 {
-                font-size: 2.2rem;
-            }
-            
-            .hero-btns {
+            .contact-info {
                 flex-direction: column;
-                gap: 15px;
+                gap: 10px;
+                align-items: flex-start;
             }
             
-            .btn {
-                width: 100%;
-                text-align: center;
+            .filter-controls {
+                flex-wrap: wrap;
             }
             
-            .products-grid {
+            .footer-content {
                 grid-template-columns: 1fr;
             }
         }
@@ -797,288 +691,402 @@
 </head>
 <body>
     <!-- Header & Navigation -->
-    <header id="header">
-        <div class="container">
-            <nav class="navbar">
-                <a href="#" class="logo">Ekbal<span>Designs</span></a>
-                
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#library">Digital Library</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#" class="btn btn-primary">Premium Assets</a></li>
-                </ul>
-                
-                <div class="mobile-toggle">
-                    <i class="fas fa-bars"></i>
+    <header class="main-header">
+        <div class="header-top">
+            <div class="container">
+                <div class="contact-info">
+                    <a href="mailto:ekbalalhasan1@gmail.com">
+                        <i class="fas fa-envelope"></i> ekbalalhasan1@gmail.com
+                    </a>
+                    <a href="https://wa.me/+8801751821868" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
                 </div>
-            </nav>
+                <button class="login-btn" id="loginBtn">Sign-up / Login</button>
+            </div>
+        </div>
+        
+        <div class="header-main">
+            <div class="container">
+                <div class="nav-container">
+                    <a href="#" class="logo">Ekbal<span>Designs</span></a>
+                    
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search for PSD, Logo, Social Media...">
+                    </div>
+                    
+                    <nav class="nav-categories">
+                        <a href="#home">Home</a>
+                        <a href="#logo">Logo</a>
+                        <a href="#uiux">UI/UX</a>
+                        <a href="#social">Social Media</a>
+                        <a href="#typography">Typography</a>
+                    </nav>
+                    
+                    <div class="mobile-toggle" id="mobileToggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="hero-bg"></div>
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Crafting Digital <span class="gold-text">Excellence</span> with <span class="blue-text">Precision</span></h1>
-                    <p>Mohammad Ekbal presents a curated collection of premium design assets for discerning creatives and brands. Each creation embodies sophistication, functionality, and timeless elegance.</p>
-                    <div class="hero-btns">
-                        <a href="#library" class="btn btn-primary">Explore Library</a>
-                        <a href="#contact" class="btn btn-secondary">Custom Request</a>
-                    </div>
-                </div>
+            <div class="hero-container">
                 <div class="hero-image">
-                    <div class="feature-badge">FEATURED DESIGN</div>
-                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Premium Design Showcase">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mohammad Ekbal" class="profile-img">
+                </div>
+                <div class="hero-content">
+                    <h1>Hi, I'm Mohammad Ekbal</h1>
+                    <h2>Creative Designer</h2>
+                    <p>Welcome to my design studio! I create premium PSD templates, logos, UI/UX designs, and social media assets. Download free resources or purchase premium designs for your projects.</p>
+                    <a href="https://wa.me/+8801751821868" target="_blank" class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Me
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Digital Library -->
-    <section id="library">
+    <!-- Design Showcase -->
+    <section class="showcase" id="designs">
         <div class="container">
             <div class="section-title">
-                <h2>Digital Library</h2>
-                <p>Browse and download premium design assets. Each file is meticulously crafted for professional use.</p>
+                <h2>Design Showcase</h2>
+                <p>Browse and download premium design resources. All files are fully layered and editable.</p>
             </div>
             
-            <div class="library-controls">
-                <div class="search-box">
-                    <i class="fas fa-search"></i>
-                    <input type="text" id="searchInput" placeholder="Search for design assets...">
-                </div>
-                
-                <div class="filter-tags" id="filterTags">
-                    <div class="filter-tag active" data-filter="all">All</div>
-                    <div class="filter-tag" data-filter="vector">Vector</div>
-                    <div class="filter-tag" data-filter="psd">PSD</div>
-                    <div class="filter-tag" data-filter="mockup">Mockup</div>
-                    <div class="filter-tag" data-filter="minimalist">Minimalist</div>
-                    <div class="filter-tag" data-filter="corporate">Corporate</div>
-                </div>
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All Designs</button>
+                <button class="filter-btn" data-filter="premium">Premium</button>
+                <button class="filter-btn" data-filter="free">Free</button>
+                <button class="filter-btn" data-filter="logo">Logo</button>
+                <button class="filter-btn" data-filter="uiux">UI/UX</button>
             </div>
             
-            <div class="products-grid" id="productsGrid">
-                <!-- Product items will be dynamically loaded here -->
+            <div class="designs-grid" id="designsGrid">
+                <!-- Design cards will be loaded dynamically -->
             </div>
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="testimonials" id="testimonials">
-        <div class="container">
-            <div class="section-title">
-                <h2>Client Testimonials</h2>
-                <p>What industry leaders say about working with Mohammad Ekbal.</p>
+    <!-- PSD Detail Modal -->
+    <div class="psd-detail-modal" id="psdModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalDesignTitle">Minimal Logo Design</h2>
+                <button class="close-modal" id="closeModal">&times;</button>
             </div>
-            
-            <div class="testimonial-slider">
-                <div class="testimonial-item active" id="testimonial1">
-                    <div class="client-photo">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Client Photo">
+            <div class="modal-body">
+                <div class="preview-area">
+                    <img id="modalPreview" src="https://images.unsplash.com/photo-1634942537034-2531766767d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Design Preview">
+                </div>
+                <div class="file-info">
+                    <h3>File Information</h3>
+                    <div class="info-item">
+                        <span class="info-label">Format:</span>
+                        <span class="info-value">PSD</span>
                     </div>
-                    <p class="testimonial-text">"Ekbal's designs transformed our brand identity. The attention to detail and sophisticated aesthetic elevated our entire marketing ecosystem. Simply exceptional work."</p>
-                    <h4 class="client-name">Alexander Chen</h4>
-                    <p class="client-role">Creative Director, Nova Studios</p>
-                </div>
-                
-                <div class="slider-controls">
-                    <div class="slider-dot active" data-slide="1"></div>
-                    <div class="slider-dot" data-slide="2"></div>
-                    <div class="slider-dot" data-slide="3"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Get In Touch</h2>
-                <p>Interested in custom design work or have questions about assets? Reach out directly.</p>
-            </div>
-            
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Start a <span class="gold-text">Project</span> With Me</h3>
-                    <p>I specialize in creating bespoke design solutions for luxury brands, corporate identities, and digital experiences. Let's discuss how we can bring your vision to life.</p>
-                    
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>contact@ekbaldesigns.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>+1 (555) 123-4567</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Based In</h4>
-                                <p>New York, NY</p>
-                            </div>
-                        </div>
+                    <div class="info-item">
+                        <span class="info-label">Layered:</span>
+                        <span class="info-value">Yes</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Resolution:</span>
+                        <span class="info-value">3000x2000px</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">File Size:</span>
+                        <span class="info-value">15.4 MB</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Category:</span>
+                        <span class="info-value" id="modalCategory">Logo</span>
                     </div>
                     
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-behance"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                    <div class="download-section">
+                        <button class="psd-download-btn" id="downloadPsdBtn">Download PSD</button>
+                        <p class="login-required" id="loginRequiredMsg">Please Sign-up to Download</p>
                     </div>
                 </div>
-                
-                <form class="contact-form" id="contactForm">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <select required>
-                        <option value="" disabled selected>Project Type</option>
-                        <option value="branding">Brand Identity</option>
-                        <option value="web">Web Design</option>
-                        <option value="print">Print Design</option>
-                        <option value="packaging">Packaging</option>
-                        <option value="other">Other</option>
-                    </select>
-                    <textarea placeholder="Project Details & Requirements" required></textarea>
-                    <button type="submit" class="btn btn-primary">Send Request</button>
-                </form>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-about">
-                    <a href="#" class="footer-logo">Ekbal<span>Designs</span></a>
-                    <p>A premium digital marketplace and design studio led by Mohammad Ekbal, specializing in sophisticated design assets and bespoke creative solutions for luxury brands.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-behance"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <h3>Ekbal Designs</h3>
+                    <p>A premium design resource hub created by Mohammad Ekbal. Download free and premium PSD files, logos, UI kits, and social media templates.</p>
+                    <div class="contact-info">
+                        <a href="mailto:ekbalalhasan1@gmail.com">
+                            <i class="fas fa-envelope"></i> ekbalalhasan1@gmail.com
+                        </a>
+                        <a href="https://wa.me/+8801751821868" target="_blank">
+                            <i class="fab fa-whatsapp"></i> +880 1751 821868
+                        </a>
                     </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#logo">Logo Designs</a></li>
+                        <li><a href="#uiux">UI/UX Kits</a></li>
+                        <li><a href="#social">Social Media</a></li>
+                        <li><a href="#typography">Typography</a></li>
+                        <li><a href="#premium">Premium PSD</a></li>
+                    </ul>
                 </div>
                 
                 <div class="footer-links">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#library">Digital Library</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#designs">Design Showcase</a></li>
+                        <li><a href="#about">About Me</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li><a href="#">License Agreement</a></li>
+                        <li><a href="#license">License</a></li>
                     </ul>
                 </div>
                 
-                <div class="footer-newsletter">
-                    <h4>Newsletter</h4>
-                    <p>Subscribe to receive exclusive design assets and updates.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your Email" required>
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#freebies">Free Downloads</a></li>
+                        <li><a href="#tutorials">Design Tutorials</a></li>
+                        <li><a href="#blog">Design Blog</a></li>
+                        <li><a href="#tools">Design Tools</a></li>
+                        <li><a href="#support">Support</a></li>
+                    </ul>
                 </div>
             </div>
             
             <div class="copyright">
-                <p>&copy; 2023 Ekbal Designs. All rights reserved. | Crafted with precision by Mohammad Ekbal</p>
+                <p>&copy; 2023 Ekbal Designs. All rights reserved. | Created by Mohammad Ekbal</p>
             </div>
         </div>
     </footer>
 
     <script>
         // Mobile Navigation Toggle
-        const mobileToggle = document.querySelector('.mobile-toggle');
-        const navLinks = document.querySelector('.nav-links');
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navCategories = document.querySelector('.nav-categories');
         
         mobileToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+            navCategories.classList.toggle('active');
             mobileToggle.querySelector('i').classList.toggle('fa-bars');
             mobileToggle.querySelector('i').classList.toggle('fa-times');
         });
         
-        // Header Scroll Effect
-        window.addEventListener('scroll', () => {
-            const header = document.getElementById('header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-        
-        // Product Data
-        const products = [
-            { id: 1, title: "Luxury Brand Identity Kit", category: "vector", type: "premium", price: "$89", image: "https://images.unsplash.com/photo-1634942537034-2531766767d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
-            { id: 2, title: "Minimalist Business Card Templates", category: "psd", type: "freebie", price: "Free", image: "https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
-            { id: 3, title: "Corporate Presentation Deck", category: "mockup", type: "premium", price: "$75", image: "https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
-            { id: 4, title: "Elegant Social Media Pack", category: "vector", type: "freebie", price: "Free", image: "https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
-            { id: 5, title: "Minimalist Logo Collection", category: "minimalist", type: "premium", price: "$120", image: "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
-            { id: 6, title: "Corporate Brochure Templates", category: "corporate", type: "premium", price: "$65", image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
-            { id: 7, title: "Product Mockup Bundle", category: "mockup", type: "freebie", price: "Free", image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
-            { id: 8, title: "Luxury Packaging Designs", category: "vector", type: "premium", price: "$95", image: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" }
+        // Design Data
+        const designs = [
+            { id: 1, title: "Modern Business Logo", category: "logo", type: "premium", image: "https://images.unsplash.com/photo-1634942537034-2531766767d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
+            { id: 2, title: "Social Media Kit 2023", category: "social", type: "free", image: "https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
+            { id: 3, title: "E-commerce UI Kit", category: "uiux", type: "premium", image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
+            { id: 4, title: "Minimalist Typography", category: "typography", type: "free", image: "https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
+            { id: 5, title: "Restaurant Branding Kit", category: "logo", type: "premium", image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
+            { id: 6, title: "Mobile App UI Design", category: "uiux", type: "premium", image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
+            { id: 7, title: "Instagram Story Templates", category: "social", type: "free", image: "https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" },
+            { id: 8, title: "Creative Typography Pack", category: "typography", type: "premium", image: "https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" }
         ];
         
-        // Render Products
-        const productsGrid = document.getElementById('productsGrid');
+        // Render Designs
+        const designsGrid = document.getElementById('designsGrid');
         
-        function renderProducts(filter = 'all') {
-            productsGrid.innerHTML = '';
+        function renderDesigns(filter = 'all') {
+            designsGrid.innerHTML = '';
             
-            const filteredProducts = filter === 'all' 
-                ? products 
-                : products.filter(product => product.category === filter);
+            const filteredDesigns = filter === 'all' 
+                ? designs 
+                : designs.filter(design => {
+                    if (filter === 'premium') return design.type === 'premium';
+                    if (filter === 'free') return design.type === 'free';
+                    return design.category === filter;
+                });
             
-            filteredProducts.forEach(product => {
-                const productCard = document.createElement('div');
-                productCard.className = 'product-card';
-                productCard.setAttribute('data-category', product.category);
+            filteredDesigns.forEach(design => {
+                const designCard = document.createElement('div');
+                designCard.className = 'design-card';
+                designCard.setAttribute('data-id', design.id);
+                designCard.setAttribute('data-category', design.category);
+                designCard.setAttribute('data-type', design.type);
                 
-                productCard.innerHTML = `
-                    <div class="product-image">
-                        <img src="${product.image}" alt="${product.title}">
+                designCard.innerHTML = `
+                    <div class="design-badge ${design.type === 'premium' ? 'premium-badge' : 'free-badge'}">
+                        ${design.type === 'premium' ? 'PREMIUM' : 'FREE'}
                     </div>
-                    <div class="product-info">
-                        <span class="product-category">${product.category.toUpperCase()}</span>
-                        <h3 class="product-title">${product.title}</h3>
-                        <div class="product-footer">
-                            <div>
-                                <div class="product-price">${product.price}</div>
-                                <span class="${product.type === 'freebie' ? 'free-badge' : 'premium-badge'}">${product.type.toUpperCase()}</span>
-                            </div>
-                            <button class="download-btn">Download</button>
+                    <div class="design-thumbnail">
+                        <img src="${design.image}" alt="${design.title}">
+                    </div>
+                    <div class="design-info">
+                        <h3 class="design-title">${design.title}</h3>
+                        <span class="design-category">${design.category.toUpperCase()}</span>
+                        <div class="design-actions">
+                            <a href="#" class="action-btn view-btn view-design">View</a>
+                            <a href="#" class="action-btn download-btn download-design">Download</a>
                         </div>
                     </div>
                 `;
                 
-                productsGrid.appendChild(productCard);
+                designsGrid.appendChild(designCard);
+            });
+            
+            // Add event listeners to new buttons
+            document.querySelectorAll('.view-design').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const card = this.closest('.design-card');
+                    openDesignModal(
+                        card.querySelector('.design-title').textContent,
+                        card.querySelector('.design-category').textContent,
+                        card.querySelector('img').src,
+                        card.getAttribute('data-type')
+                    );
+                });
+            });
+            
+            document.querySelectorAll('.download-design').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    handleDownload(this.closest('.design-card'));
+                });
             });
         }
         
         // Initial render
-        renderProducts();
+        renderDesigns();
         
-        // Filter Products
-        const filterTags = document.querySelectorAll('.filter-tag');
+        // Filter Designs
+        const filterBtns = document.querySelectorAll('.filter-btn');
         
-        filterTags.forEach(tag => {
-            tag.addEventListener('click', () => {
-                // Remove active class from all tags
-                filterTags.forEach(t => t.classList.remove('active'));
-                // Add active class to clicked tag
-                tag.classList.add('active');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
                 
-                const
+                const filter = btn.getAttribute('data-filter');
+                renderDesigns(filter);
+            });
+        });
+        
+        // Design Modal
+        const psdModal = document.getElementById('psdModal');
+        const closeModal = document.getElementById('closeModal');
+        const modalDesignTitle = document.getElementById('modalDesignTitle');
+        const modalPreview = document.getElementById('modalPreview');
+        const modalCategory = document.getElementById('modalCategory');
+        const downloadPsdBtn = document.getElementById('downloadPsdBtn');
+        const loginRequiredMsg = document.getElementById('loginRequiredMsg');
+        
+        let isLoggedIn = false;
+        
+        function openDesignModal(title, category, imageSrc, type) {
+            modalDesignTitle.textContent = title;
+            modalCategory.textContent = category;
+            modalPreview.src = imageSrc;
+            
+            // Show login message if not logged in
+            if (!isLoggedIn) {
+                downloadPsdBtn.textContent = "Please Sign-up to Download";
+                downloadPsdBtn.style.backgroundColor = "#ccc";
+                downloadPsdBtn.style.cursor = "not-allowed";
+                loginRequiredMsg.style.display = "block";
+            } else {
+                downloadPsdBtn.textContent = type === 'premium' ? "Download Premium PSD" : "Download Free PSD";
+                downloadPsdBtn.style.backgroundColor = "var(--primary)";
+                downloadPsdBtn.style.cursor = "pointer";
+                loginRequiredMsg.style.display = "none";
+            }
+            
+            psdModal.style.display = "block";
+            document.body.style.overflow = "hidden";
+        }
+        
+        closeModal.addEventListener('click', () => {
+            psdModal.style.display = "none";
+            document.body.style.overflow = "auto";
+        });
+        
+        // Close modal when clicking outside
+        window.addEventListener('click', (e) => {
+            if (e.target === psdModal) {
+                psdModal.style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+        });
+        
+        // Download Functionality
+        function handleDownload(card) {
+            if (!isLoggedIn) {
+                alert("Please sign up or login to download designs.");
+                return;
+            }
+            
+            const designTitle = card.querySelector('.design-title').textContent;
+            const designType = card.getAttribute('data-type');
+            
+            if (designType === 'premium') {
+                alert(`Thank you for purchasing "${designTitle}". Your download will begin shortly.`);
+            } else {
+                alert(`Downloading "${designTitle}"...`);
+            }
+            
+            // In a real application, this would trigger an actual download
+            console.log(`Downloading: ${designTitle}`);
+        }
+        
+        // Login/Signup Button
+        const loginBtn = document.getElementById('loginBtn');
+        
+        loginBtn.addEventListener('click', () => {
+            if (!isLoggedIn) {
+                // Show login/signup form (simplified for demo)
+                const email = prompt("Enter your email to sign up:");
+                if (email) {
+                    alert(`Welcome to Ekbal Designs! A verification email has been sent to ${email}`);
+                    isLoggedIn = true;
+                    loginBtn.textContent = "My Account";
+                    
+                    // Update modal download button
+                    downloadPsdBtn.textContent = "Download PSD";
+                    downloadPsdBtn.style.backgroundColor = "var(--primary)";
+                    downloadPsdBtn.style.cursor = "pointer";
+                    loginRequiredMsg.style.display = "none";
+                }
+            } else {
+                alert("Welcome back! Redirecting to your account...");
+            }
+        });
+        
+        // Initialize download button in modal
+        downloadPsdBtn.addEventListener('click', () => {
+            if (!isLoggedIn) {
+                alert("Please sign up or login to download designs.");
+                return;
+            }
+            
+            const designTitle = modalDesignTitle.textContent;
+            alert(`Downloading "${designTitle}"...`);
+        });
+        
+        // Search Functionality
+        const searchInput = document.querySelector('.search-bar input');
+        
+        searchInput.addEventListener('keyup', (e) => {
+            if (e.key === 'Enter') {
+                const searchTerm = searchInput.value.toLowerCase();
+                if (searchTerm) {
+                    const filtered = designs.filter(design => 
+                        design.title.toLowerCase().includes(searchTerm) || 
+                        design.category.toLowerCase().includes(searchTerm)
+                    );
+                    
+                    // Update UI to show
